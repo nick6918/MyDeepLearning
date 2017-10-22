@@ -2,21 +2,23 @@
 
 ## Repo Intro
 This repo is to construct a DL library for learning and testing that includes:
-  ### 1, CNN, RNN model in pure Numpy, with all BP gredient calculation included.
+
+  1, CNN, RNN model in pure Numpy, with all BP gredient calculation included.
   
-  ### 2, Some classic model in tensorflow, include ResNet, SqueezeNet and more.
+  2, Some classic model in tensorflow, include ResNet, SqueezeNet and more.
   
-  ### 3, Some classic project script include Image Captioning, Image Fooling, Deep Dream, style transfer and more.
+  3, Some classic project script include Image Captioning, Image Fooling, Deep Dream, style transfer and more.
   
-  ### 4, Multiple GAN implemented in Tensorflow.
+  4, Multiple GAN implemented in Tensorflow.
   
-  ### 5, Q-Learning implement in Numpy and Gym.
+  5, Q-Learning implement in Numpy and Gym.
   
 ## File structure
 
 all files in root content represents a mini project, introduced in the section below. All files in lib has been covered by these mini projects.
 
---lib
+  --lib
+
     -- classifiers
       "all classifier models in both pure numpy or tensorflow"
 
