@@ -11,7 +11,9 @@ This repo is to construct a DL library for learning and testing that includes:
   
   4, Multiple GAN implemented in Tensorflow.
   
-  5, Q-Learning implement in Numpy and Gym.
+  5, Q-Learning implement in Numpy and Gym. (Comming soon)
+  
+  6, RCNN families implementation. (Comming soon)
   
 ## File structure
 
