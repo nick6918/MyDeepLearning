@@ -17,22 +17,22 @@ This repo is to construct a DL library for learning and testing that includes:
 
 all files in root content represents a mini project, introduced in the section below. All files in lib has been covered by these mini projects.
 
-  --lib
+    --lib
 
-    -- classifiers
-      "all classifier models in both pure numpy or tensorflow"
+      -- classifiers
+        "all classifier models in both pure numpy or tensorflow"
 
-    -- solvers
-       "Trainer for both TF and pure numpy model"
+      -- solvers
+         "Trainer for both TF and pure numpy model"
 
-    -- layers
-       "layers for pure numpy model"
+      -- layers
+         "layers for pure numpy model"
 
-    -- utils
-       "some assistant files"
+      -- utils
+         "some assistant files"
 
-    -- datasets
-       "CIFAR-1O, MNIST dataset"
+      -- datasets
+         "CIFAR-1O, MNIST dataset"
        
 ## Mini projects
 
@@ -84,7 +84,9 @@ It implemented DCGAN and WGAN in tensorflow to generate images based on both MNI
 I will implemented the following extra more model and project in very recent time.
 
 [] DQN
+
 [] RCNN
+
 [] ResNet
 
 ## Special Thanks
