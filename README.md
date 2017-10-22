@@ -3,7 +3,7 @@
 ## Repo Intro
 This repo is to construct a DL library for learning and testing that includes:
 
-  1, CNN, RNN model in pure Numpy, with all BP gredient calculation included.
+  1, CNN, RNN model in pure Numpy, with all BP gradients calculation included.
   
   2, Some classic model in tensorflow, include ResNet, SqueezeNet and more.
   
@@ -79,6 +79,18 @@ Please check this blog for details:
 ### 10. TFGAN.py
 It implemented DCGAN and WGAN in tensorflow to generate images based on both MNIST and CIFAR-10.
 
+## How to run 
+
+    Step 1, Fork and clone the repo to locak, a star for the repo is appreciated.
+    
+    Step 2, cd lib/datasets, run xxx.sh to download all data.
+    
+    Step 3, Python3 is necessary for this project.
+    
+    Step 4, pip3 installl -r requirements, a virtualenv is recommened.
+    
+    Step 5, python3 <ProjectYouWantToRun.py>
+
 ## More to do
 
 I will implemented the following extra more model and project in very recent time.
@@ -94,3 +106,11 @@ I will implemented the following extra more model and project in very recent tim
 This repo is heavily referenced with the assignment of cs231n. Special thanks to the great staff who gives us such a great online course materails.
 
 Course link: http://cs231n.stanford.edu/
+
+## Contact me
+
+Email: nick_fandingwei@outlook.com
+
+For Chinese users, Zhihu is the quickest way to contact with me:
+
+https://www.zhihu.com/people/NickWey
