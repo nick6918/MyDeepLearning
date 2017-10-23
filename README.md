@@ -85,7 +85,7 @@ It uses lib/model/squeezeNet.py with well trained parameters to extract features
 ### 10. TFGAN.py
 It implemented DCGAN and WGAN in tensorflow to generate images based on both MNIST and CIFAR-10.
 
-[GAN relevany blog(In Chinese)](http://nickiwei.github.io/2017/09/25/GAN%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8ATensorFlow%E5%AE%9E%E7%8E%B0/)
+[GAN relevant blog(In Chinese)](http://nickiwei.github.io/2017/09/25/GAN%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8ATensorFlow%E5%AE%9E%E7%8E%B0/)
 
 ## How to use
 
