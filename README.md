@@ -116,3 +116,5 @@ Twitter: https://twitter.com/nick_fandingwei
 For Chinese user, zhihu is the fastest way to get response from me: https://www.zhihu.com/people/NickWey
 
 You can also check my tech blog for more: http://nickiwei.github.io/
+
+Consider to follow me on Zhihu, Twitter and Github, thanks!
