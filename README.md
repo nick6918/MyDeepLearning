@@ -47,15 +47,17 @@ It uses lib/model/linear_classifer.py to construct a linear classifer model to c
 ### 3, FCN.py
 It uses lib/model/fc_net.py to construct a fullt connected neural network model to classify CIFAR-10 images. It's implemented in pure Numpy.
 
-[Relevant blog(In Chinese)](http://nickiwei.github.io/2017/09/01/CNN%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%E7%9A%84Python%E5%AE%9E%E7%8E%B0I-FCN%E5%85%A8%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C/)
+[FCN Relevant blog(In Chinese)](http://nickiwei.github.io/2017/09/01/CNN%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%E7%9A%84Python%E5%AE%9E%E7%8E%B0I-FCN%E5%85%A8%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C/)
 
 ### 2, ThreeLayerCNN.py
 It uses lib/model/cnn.py to construct a cnn model to classify CIFAR-10 images. It's implemented in pure Numpy.
 
+[CNN Relevant blog(In Chinese)](http://nickiwei.github.io/2017/09/07/CNN%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%E7%9A%84Python%E5%AE%9E%E7%8E%B0III-CNN%E5%AE%9E%E7%8E%B0/)
+
 ### 4, ImageCaptioning.py
 It uses lib/model/rnn.py to contruct a vanilla rnn or lstm model to construct image captioning for microsoft coco data, the input feature is not from a CNN but from dataset directly. It's implemented in pure Numpy.
 
-Please check this blog for details: 
+[Image Captioning Relevant blog(In Chinese)](http://nickiwei.github.io/2017/09/16/RNN,-LSTM%E4%B8%8EImageCaptioning%E5%8E%9F%E7%90%86%E5%8F%8APython%E5%AE%9E%E7%8E%B0/)
 
 ### PART II: Tensorflow project
 
@@ -73,13 +75,17 @@ It construct a model that fool well-trained squeezenet to label an image with wr
 
 Please check this blog for details of these 3 prjects above: 
 
+[Saliency Map/DeepDream/ImageFooling Relevant Blog(In Chinese)](http://nickiwei.github.io/2017/09/19/%E4%BB%8ESaliency-Map%E5%88%B0Gredient-Ascent(%E5%9F%BA%E4%BA%8ETensorFlow%E5%AE%9E%E7%8E%B0)/)
+
 ### 9, StyleTransfer.py
 It uses lib/model/squeezeNet.py with well trained parameters to extract features from both content and style image to construct a new content image with style image style.
 
-Please check this blog for details: 
+[Style Transfer Relevant Blog(In Chinese)](http://nickiwei.github.io/2017/09/24/Style-Transfer-%E5%9F%BA%E4%BA%8ETensorFlow%E5%AE%9E%E7%8E%B0/)
 
 ### 10. TFGAN.py
 It implemented DCGAN and WGAN in tensorflow to generate images based on both MNIST and CIFAR-10.
+
+[GAN relevany blog(In Chinese)](http://nickiwei.github.io/2017/09/25/GAN%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8ATensorFlow%E5%AE%9E%E7%8E%B0/)
 
 ## How to use
 
