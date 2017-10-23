@@ -1,7 +1,7 @@
 # MyDeepLearning
 
 ## Repo Intro
-This repo is to construct a DL library for learning and testing that includes:
+This repo is to construct a DL library for learning and testing some classic projects that includes:
 
   1, CNN, RNN model in pure Numpy, with all BP gredient calculation included.
   
@@ -78,6 +78,18 @@ Please check this blog for details:
 
 ### 10. TFGAN.py
 It implemented DCGAN and WGAN in tensorflow to generate images based on both MNIST and CIFAR-10.
+
+### How to use
+
+    1, Download the repo to local, a star to the repo is appreciated.
+    
+    2, make sure Python3 is installled in your local env, a virtual env is recommended.
+    
+    3, pip3 install -r requirements
+    
+    4, go to lib/datasets, manually run get_datasets.sh and get_3rd_data.sh to download dataset to local.
+    
+    5, feel free to run any project under root.
 
 ## More to do
 
