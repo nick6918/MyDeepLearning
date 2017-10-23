@@ -79,7 +79,7 @@ Please check this blog for details:
 ### 10. TFGAN.py
 It implemented DCGAN and WGAN in tensorflow to generate images based on both MNIST and CIFAR-10.
 
-### How to use
+## How to use
 
     1, Download the repo to local, a star to the repo is appreciated.
     
