@@ -106,3 +106,13 @@ I will implemented the following extra more model and project in very recent tim
 This repo is heavily referenced with the assignment of cs231n. Special thanks to the great staff who gives us such a great online course materails.
 
 Course link: http://cs231n.stanford.edu/
+
+## Contact Me
+
+Email: nick_fandingwei@outlook.com
+
+Twitter: https://twitter.com/nick_fandingwei
+
+For Chinese user, zhihu is the fastest way to get response from me: https://www.zhihu.com/people/NickWey
+
+You can also check my tech blog for more: http://nickiwei.github.io/
