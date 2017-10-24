@@ -42,9 +42,9 @@ The projects is listed here in a recommended reading sequence:
 
 ### PART I: pure Numpy project
 
-### 1, LinearClassifer.py
+### 1, LinearClassifier.py
 
-It uses lib/model/linear_classifer.py to construct a linear classifer model to classify CIFAR-10 images. It's implemented in pure Numpy.
+It uses lib/model/linear_classifier.py to construct a linear classifer model to classify CIFAR-10 images. It's implemented in pure Numpy.
 
 ### 3, FCN.py
 It uses lib/model/fc_net.py to construct a fullt connected neural network model to classify CIFAR-10 images. It's implemented in pure Numpy.
