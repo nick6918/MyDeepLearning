@@ -103,7 +103,7 @@ It implemented DCGAN and WGAN in tensorflow to generate images based on both MNI
 
 ## More to do
 
-I will implemented the following extra more model and project in very recent time.
+I will upload the following extra models and projects in very recent time.
 
 [] DQN
 
