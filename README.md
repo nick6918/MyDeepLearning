@@ -117,7 +117,7 @@ I will upload the following extra models and projects in very recent time.
 
 ## Special Thanks
 
-This repo is heavily referenced with the assignment of cs231n. Special thanks to the great staff who gives us such a great online course materails.
+This repo is heavily referenced with the assignment of Stanford cs231n. Special thanks to the great staff who give us such a great online course materials.
 
 Course link: http://cs231n.stanford.edu/
 
