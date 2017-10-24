@@ -196,24 +196,30 @@ def wgangp_loss(logits_real, logits_fake, batch_size, x, G_sample):
     - G_loss: generator loss scalar
     """
     # TODO: compute D_loss and G_loss
-    D_loss = None
-    G_loss = None
+    
+    D_loss = - tf.reduce_mean(logits_real) + tf.reduce_mean(logits_fake)
+    G_loss = - tf.reduce_mean(logits_fake)
 
     # lambda from the paper
     lam = 10
     
     # random sample of batch_size (tf.random_uniform)
-    eps = 0
-    x_hat = 0
-
+    eps = tf.random_uniform([batch_size,1], minval=0.0, maxval=1.0)
+    x_hat = eps*x+(1-eps)*G_sample
+    #diff = G_sample - x
+    #interp = x + (eps * diff)
+    
     # Gradients of Gradients is kind of tricky!
     with tf.variable_scope('',reuse=True) as scope:
-        grad_D_x_hat = None
-
-    grad_norm = None
-    grad_pen = None
-
-
+        grad_D_x_hat = tf.gradients(discriminator(x_hat), x_hat)
+    
+    grad_norm = tf.norm(grad_D_x_hat[0], axis=1, ord='euclidean')
+    grad_pen = tf.reduce_mean(tf.square(grad_norm-1))
+    #slopes = tf.sqrt(tf.reduce_sum(tf.square(grad_D_x_hat), reduction_indices=[1]))
+    #grad_pen = tf.reduce_mean((slopes - 1.) ** 2)
+    
+    
+    D_loss += lam*grad_pen
 
     return D_loss, G_loss
 
