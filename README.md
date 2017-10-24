@@ -17,7 +17,7 @@ This repo is to construct a DL library for learning and testing some classic pro
   
 ## File structure
 
-all files in root content represents a mini project, introduced in the section below. All files in lib has been covered by these mini projects.
+All files in root directory represent a mini project, introduced in the section below. All files in lib has been covered by these mini projects.
 
     --lib
 
