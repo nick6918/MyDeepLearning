@@ -3,7 +3,7 @@
 ## Repo Intro
 This repo is to construct a DL library for learning and testing some classic projects that include:
 
-  1, CNN, RNN model in pure Numpy, with all BP gradients calculation included.
+  1, CNN, RNN(LSTM) model in pure Numpy, with all BP gradients calculation included.
   
   2, Some classic model in tensorflow, including ResNet, SqueezeNet and more.
   
