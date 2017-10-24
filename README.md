@@ -47,7 +47,7 @@ The projects is listed here in a recommended reading sequence:
 It uses lib/model/linear_classifier.py to construct a linear classifer model to classify CIFAR-10 images. It's implemented in pure Numpy.
 
 ### 3, FCN.py
-It uses lib/model/fc_net.py to construct a fullt connected neural network model to classify CIFAR-10 images. It's implemented in pure Numpy.
+It uses lib/model/fc_net.py to construct a fully connected neural network model to classify CIFAR-10 images. It's implemented in pure Numpy.
 
 [FCN Relevant blog(In Chinese)](http://nickiwei.github.io/2017/09/01/CNN%E5%8D%B7%E7%A7%AF%E7%BD%91%E7%BB%9C%E7%9A%84Python%E5%AE%9E%E7%8E%B0I-FCN%E5%85%A8%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C/)
 
