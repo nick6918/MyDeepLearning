@@ -1,17 +1,19 @@
 # MyDeepLearning
 
 ## Repo Intro
-This repo is to construct a DL library for learning and testing some classic projects that includes:
+This repo is to construct a DL library for learning and testing some classic projects that include:
 
-  1, CNN, RNN model in pure Numpy, with all BP gredient calculation included.
+  1, CNN, RNN model in pure Numpy, with all BP gradients calculation included.
   
-  2, Some classic model in tensorflow, include ResNet, SqueezeNet and more.
+  2, Some classic model in tensorflow, including ResNet, SqueezeNet and more.
   
-  3, Some classic project script include Image Captioning, Image Fooling, Deep Dream, style transfer and more.
+  3, Some classic project scripts including Image Captioning, Image Fooling, Deep Dream, style transfer and more.
   
-  4, Multiple GAN implemented in Tensorflow.
+  4, Image Localization, Dectection and Segmentation using Fast(er) R-CNN. (Coming very soon)
   
-  5, Q-Learning implement in Numpy and Gym.
+  5, Multiple GAN(DCGAN, LSGAN, WGAN and more) implementation in Tensorflow.
+  
+  6, Q-Learning implementation in Numpy and Gym. (Coming very soon)
   
 ## File structure
 
@@ -105,9 +107,13 @@ I will implemented the following extra more model and project in very recent tim
 
 [] DQN
 
-[] RCNN
+[] RCNN Family
 
 [] ResNet
+
+[] Policy Gradient(Reenforcement learning)
+
+[] VAE(Generative model)
 
 ## Special Thanks
 
