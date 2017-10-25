@@ -87,7 +87,6 @@ def basic_fc_discriminator(x):
     """
 
     with tf.variable_scope("bfcdiscriminator"):
-        # TODO: implement architecture
 
         W1 = tf.get_variable("W1", (784, 256))
         b1 = tf.get_variable("b1", (256, ), initializer=tf.zeros_initializer())
@@ -127,7 +126,7 @@ def discriminator(x):
     """
 
     with tf.variable_scope("discriminator"):
-        # TODO: implement architecture
+        #implement architecture
         X_reshaped = tf.reshape(x, shape=[-1, 28, 28, 1])
         H1 = tf.layers.conv2d(inputs=X_reshaped, filters=32, kernel_size=5, strides=1,activation=None, padding='VALID', use_bias=True)
         H1D = leaky_relu(H1)
@@ -151,7 +150,6 @@ def fc_generator(z):
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("fcgenerator"):
-        # TODO: implement architecture
         H1 = tf.layers.dense(z, units = 1024, activation = tf.nn.relu, use_bias = True)
         H2 = tf.layers.dense(H1, units = 1024, activation = tf.nn.relu, use_bias = True)
         img = tf.layers.dense(H2, units = 784, activation = tf.nn.tanh, use_bias = True)
@@ -168,7 +166,7 @@ def generator(z):
     TensorFlow Tensor of generated images, with shape [batch_size, 784].
     """
     with tf.variable_scope("generator"):
-        # TODO: implement architecture
+        #implement architecture
         H1 = tf.layers.dense(inputs = z, units = 1024, activation = tf.nn.relu, use_bias = True)
         H1_BN = tf.layers.batch_normalization(inputs=H1, axis=1)
         H2 = tf.layers.dense(inputs = H1_BN, units = 7*7*128, activation = tf.nn.relu, use_bias = True)
@@ -195,8 +193,8 @@ def wgangp_loss(logits_real, logits_fake, batch_size, x, G_sample):
     - D_loss: discriminator loss scalar
     - G_loss: generator loss scalar
     """
-    # TODO: compute D_loss and G_loss
     
+    #compute D_loss and G_loss    
     D_loss = - tf.reduce_mean(logits_real) + tf.reduce_mean(logits_fake)
     G_loss = - tf.reduce_mean(logits_fake)
 
@@ -236,7 +234,8 @@ def lsgan_loss(score_real, score_fake):
     - D_loss: discriminator loss scalar
     - G_loss: generator loss scalar
     """
-    # TODO: compute D_loss and G_loss
+
+    #compute D_loss and G_loss
     G_loss = 0.5 * tf.reduce_mean((score_fake-1)**2)
     D_loss = 0.5 * tf.reduce_mean((score_real-1)**2)\
              + 0.5 * tf.reduce_mean(score_fake**2)
@@ -256,12 +255,12 @@ def gan_loss(logits_real, logits_fake):
     - G_loss: generator loss scalar
     """
 
-    # TODO: compute D_loss and G_loss
+    #compute D_loss and G_loss
     D_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels = tf.ones_like(logits_real), logits=logits_real)) +  tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels = tf.zeros_like(logits_fake), logits=logits_fake))
     G_loss = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels = tf.ones_like(logits_fake), logits=logits_fake))
     return D_loss, G_loss   
 
-# TODO: create an AdamOptimizer for D_solver and G_solver
+#create an AdamOptimizer for D_solver and G_solver
 def get_solvers(learning_rate=1e-3, beta1=0.5):
     """Create solvers for GAN training.
     

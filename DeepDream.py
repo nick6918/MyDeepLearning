@@ -71,36 +71,13 @@ def create_class_visualization(target_y, model, **kwargs):
     losses = model.classifier[0] 
     grad = tf.gradients(model.classifier[0, target_y], model.image)[0] - l2_reg*model.image
 
-    
-    ########################################################################
-    # TODO: Compute the loss and the gradient of the loss with respect to  #
-    # the input image, model.image. We compute these outside the loop so   #
-    # that we don't have to recompute the gradient graph at each iteration #
-    #                                                                      #
-    # Note: loss and grad should be TensorFlow Tensors, not numpy arrays!  #
-    #                                                                      #
-    # The loss is the score for the target label, target_y. You should     #
-    # use model.classifier to get the scores, and tf.gradients to compute  #
-    # gradients. Don't forget the (subtracted) L2 regularization term!     #
-    ########################################################################
-    ############################################################################
-    #                             END OF YOUR CODE                             #
-    ############################################################################
-
     for t in range(num_iterations):
         # Randomly jitter the image a bit; this gives slightly nicer results
         ox, oy = np.random.randint(-max_jitter, max_jitter+1, 2)
         Xi = X.copy()
         X = np.roll(np.roll(X, ox, 1), oy, 2)
         
-        ########################################################################
-        # TODO: Use sess to compute the value of the gradient of the score for #
-        # class target_y with respect to the pixels of the image, and make a   #
-        # gradient step on the image using the learning rate. You should use   #
-        # the grad variable you defined above.                                 #
-        #                                                                      #
-        # Be very careful about the signs of elements in your code.            #
-        ########################################################################
+
         loss_val = sess.run(losses, feed_dict={model.image: X})
         grad_val = sess.run(grad, feed_dict={model.image: X})
         dX = learning_rate * grad_val  
@@ -108,10 +85,7 @@ def create_class_visualization(target_y, model, **kwargs):
 
         print('step:%d,current_label_score:%f,target_label_score:%f' % \
               (t, loss_val.max(), loss_val[target_y]))
-        ############################################################################
-        #                             END OF YOUR CODE                             #
-        ############################################################################
-
+ 
         # Undo the jitter
         X = np.roll(np.roll(X, -ox, 1), -oy, 2)
 

@@ -160,8 +160,6 @@ class CaptioningSolver(object):
             self.model.params[p] = next_w
             self.optim_configs[p] = next_config
 
-
-    # TODO: This does nothing right now; maybe implement BLEU?
     def check_accuracy(self, X, y, num_samples=None, batch_size=100):
         """
         Check accuracy of the model on the provided data.
@@ -235,7 +233,7 @@ class CaptioningSolver(object):
             last_iter = t == num_iterations -1
             # Check train and val accuracy on the first iteration, the last
             # iteration, and at the end of each epoch.
-            # TODO: Implement some logic to check Bleu on validation set periodically
+            # Implement some logic to check Bleu on validation set periodically
             if first_iter or last_iter or epoch_end:
 
                 # Raw way to test

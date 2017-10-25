@@ -58,22 +58,12 @@ def compute_saliency_maps(X, y, model):
     # for computing vectorized losses.
     correct_scores = tf.gather_nd(model.classifier,
                                   tf.stack((tf.range(X.shape[0]), model.labels), axis=1))
-    ###############################################################################
-    # TODO: Implement this function. You should use the correct_scores to compute #
-    # the loss, and tf.gradients to compute the gradient of the loss with respect #
-    # to the input image stored in model.image.                                   #
-    # Use the global sess variable to finally run the computation.                #
-    # Note: model.image and model.labels are placeholders and must be fed values  #
-    # when you call sess.run().                                                   #
-    ###############################################################################
     losses = tf.square(1 - correct_scores)
     #losses = tf.nn.softmax_cross_entropy_with_logits(labels=tf.one_hot(model.labels, model.classifier.shape[1]), logits=model.classifier)
     grad_img = tf.gradients(losses,model.image)
     grad_img_val = sess.run(grad_img,feed_dict={model.image:X,model.labels:y})[0]
     saliency = np.sum(np.maximum(grad_img_val,0),axis=3)
-    ##############################################################################
-    #                             END OF YOUR CODE                               #
-    ##############################################################################
+
     return saliency
 
 def show_saliency_maps(X, y, mask):

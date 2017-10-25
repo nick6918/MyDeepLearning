@@ -51,19 +51,7 @@ def make_fooling_image(X, target_y, model):
     """
     X_fooling = X.copy()
     learning_rate = 1
-    ##############################################################################
-    # TODO: Generate a fooling image X_fooling that the model will classify as   #
-    # the class target_y. Use gradient ascent on the target class score, using   #
-    # the model.classifier Tensor to get the class scores for the model.image.   #
-    # When computing an update step, first normalize the gradient:               #
-    #   dX = learning_rate * g / ||g||_2                                         #
-    #                                                                            #
-    # You should write a training loop                                           #
-    #                                                                            #  
-    # HINT: For most examples, you should be able to generate a fooling image    #
-    # in fewer than 100 iterations of gradient ascent.                           #
-    # You can print your progress over iterations to check your algorithm.       #
-    ##############################################################################
+
     for i in range(100):
     	scores = sess.run(model.classifier, feed_dict = {model.image: X_fooling})
     	print('step:%d,current_label_score:%f,target_label_score:%f' % \

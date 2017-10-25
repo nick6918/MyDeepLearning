@@ -59,17 +59,6 @@ class ThreeLayerConvNet(object):
         Hp = (Hn - self.pool_param["pool_height"]) // self.pool_param["stride"] + 1
         Wp = (Wn - self.pool_param["pool_width"]) // self.pool_param["stride"] + 1
 
-        ############################################################################
-        # TODO: Initialize weights and biases for the three-layer convolutional    #
-        # network. Weights should be initialized from a Gaussian with standard     #
-        # deviation equal to weight_scale; biases should be initialized to zero.   #
-        # All weights and biases should be stored in the dictionary self.params.   #
-        # Store weights and biases for the convolutional layer using the keys 'W1' #
-        # and 'b1'; use keys 'W2' and 'b2' for the weights and biases of the       #
-        # hidden affine layer, and keys 'W3' and 'b3' for the weights and biases   #
-        # of the output affine layer.                                              #
-        ############################################################################
-        
         # Conv layer initialization
         #(N, C, HW, WW)
         self.params["W1"] = weight_scale * np.random.randn(num_filters, C, filter_size, filter_size)
